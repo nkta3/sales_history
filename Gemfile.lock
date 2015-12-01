@@ -73,6 +73,7 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
+    material-design-rails (0.1.0)
     mime-types (2.99)
     mini_portile2 (2.0.0)
     minitest (5.8.3)
@@ -167,6 +168,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
+  material-design-rails
   rails (= 4.2.4)
   rails-erd
   sass-rails (~> 5.0)

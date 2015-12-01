@@ -48,7 +48,12 @@ end
 gem 'will_paginate'
 
 gem 'simplecov'
+
 gem 'thin'
+
 gem 'rails-erd'
 # sudo apt-get install graphviz
+
 gem 'annotate'
+
+gem 'material-design-rails'
