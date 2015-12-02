@@ -1,11 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Staff Infos</h1>
+<h1>社員リスト</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Name</th>
+      <th>氏名</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,9 +14,9 @@
     <% @staff_infos.each do |staff_info| %>
       <tr>
         <td><%= staff_info.name %></td>
-        <td><%= link_to 'Show', staff_info %></td>
-        <td><%= link_to 'Edit', edit_staff_info_path(staff_info) %></td>
-        <td><%= link_to 'Destroy', staff_info, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '確認', staff_info %></td>
+        <td><%= link_to '編集', edit_staff_info_path(staff_info) %></td>
+        <td><%= link_to '削除', staff_info, method: :delete, data: { confirm: '本当によろしいですか?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +24,4 @@
 
 <br>
 
-<%= link_to 'New Staff info', new_staff_info_path %>
+<%= link_to '新規登録', new_staff_info_path %>

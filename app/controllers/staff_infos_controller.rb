@@ -42,7 +42,7 @@ class StaffInfosController < ApplicationController
   def update
     respond_to do |format|
       if @staff_info.update(staff_info_params)
-        format.html { redirect_to @staff_info, notice: 'Staff info was successfully updated.' }
+        format.html { redirect_to @staff_info, notice: '新しい社員情報を登録しました' }
         format.json { render :show, status: :ok, location: @staff_info }
       else
         format.html { render :edit }
@@ -56,7 +56,7 @@ class StaffInfosController < ApplicationController
   def destroy
     @staff_info.destroy
     respond_to do |format|
-      format.html { redirect_to staff_infos_url, notice: 'Staff info was successfully destroyed.' }
+      format.html { redirect_to staff_infos_url, notice: '社員情報を削除しました' }
       format.json { head :no_content }
     end
   end

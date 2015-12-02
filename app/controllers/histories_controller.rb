@@ -28,7 +28,7 @@ class HistoriesController < ApplicationController
 
     respond_to do |format|
       if @history.save
-        format.html { redirect_to @history, notice: 'History was successfully created.' }
+        format.html { redirect_to @history, notice: '新規営業履歴を登録しました' }
         format.json { render :show, status: :created, location: @history }
       else
         format.html { render :new }
@@ -42,7 +42,7 @@ class HistoriesController < ApplicationController
   def update
     respond_to do |format|
       if @history.update(history_params)
-        format.html { redirect_to @history, notice: 'History was successfully updated.' }
+        format.html { redirect_to @history, notice: '営業履歴を削除しました' }
         format.json { render :show, status: :ok, location: @history }
       else
         format.html { render :edit }
