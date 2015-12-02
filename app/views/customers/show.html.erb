@@ -1,29 +1,29 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Company name:</strong>
+  <strong>会社名:</strong>
   <%= @customer.company_name %>
 </p>
 
 <p>
-  <strong>Zip:</strong>
+  <strong>郵便番号:</strong>
   <%= @customer.zip %>
 </p>
 
 <p>
-  <strong>Address:</strong>
+  <strong>住所:</strong>
   <%= @customer.address %>
 </p>
 
 <p>
-  <strong>Tel:</strong>
+  <strong>電話番号:</strong>
   <%= @customer.tel %>
 </p>
 
 <p>
-  <strong>Responsible name:</strong>
+  <strong>担当者名:</strong>
   <%= @customer.responsible_name %>
 </p>
 
-<%= link_to 'Edit', edit_customer_path(@customer) %> |
-<%= link_to 'Back', customers_path %>
+<%= link_to '編集', edit_customer_path(@customer) %> |
+<%= link_to '戻る', customers_path %>
