@@ -24,7 +24,7 @@
         <td><%= customer.responsible_name %></td>
         <td><%= link_to '確認', customer %></td>
         <td><%= link_to '編集', edit_customer_path(customer) %></td>
-        <td><%= link_to '削除', customer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '削除', customer, method: :delete, data: { confirm: '本当に消してもよろしいですか?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,4 @@
 
 <br>
 
-<%= link_to '新規顧客登録', new_customer_path %>
+<%= link_to '新規登録', new_customer_path %>
