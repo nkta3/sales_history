@@ -56,7 +56,7 @@ class CustomersController < ApplicationController
   def destroy
     @customer.destroy
     respond_to do |format|
-      format.html { redirect_to customers_url, notice: 'Customer was successfully destroyed.' }
+      format.html { redirect_to customers_url, notice: '顧客情報を削除しました' }
       format.json { head :no_content }
     end
   end
