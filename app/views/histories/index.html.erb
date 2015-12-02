@@ -10,6 +10,7 @@
       <th>営業区分</th>
       <th>営業成果</th>
       <th>詳細</th>
+      <th>社員名</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -22,6 +23,7 @@
         <td><%= history.sales_category %></td>
         <td><%= history.sales_achievement %></td>
         <td><%= history.detail %></td>
+        <td><%= history.staff_info.name %></td>
         <td><%= link_to '確認', history %></td>
         <td><%= link_to '編集', edit_history_path(history) %></td>
         <td><%= link_to '削除', history, method: :delete, data: { confirm: '本当に消してもよろしいですか?' } %></td>
