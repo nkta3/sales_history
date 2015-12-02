@@ -9,5 +9,5 @@
 #
 
 class StaffInfo < ActiveRecord::Base
-  
+  validates :name, presence: {present: true, message: "必須入力です。記入をお願いします。"}
 end

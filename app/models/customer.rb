@@ -14,4 +14,5 @@
 
 class Customer < ActiveRecord::Base
   has_many :histories
+  validates :company_name, :zip , :address, :tel, :responsible_name, presence: {present: true, message: "必須入力です。記入をお願いします。"}
 end
