@@ -1,29 +1,29 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Activity time:</strong>
+  <strong>活動日時:</strong>
   <%= @history.activity_time %>
 </p>
 
 <p>
-  <strong>Customer:</strong>
+  <strong>会社名:</strong>
   <%= @history.customer %>
 </p>
 
 <p>
-  <strong>Sales category:</strong>
+  <strong>営業区分:</strong>
   <%= @history.sales_category %>
 </p>
 
 <p>
-  <strong>Sales achievement:</strong>
+  <strong>営業成果:</strong>
   <%= @history.sales_achievement %>
 </p>
 
 <p>
-  <strong>Detail:</strong>
+  <strong>詳細:</strong>
   <%= @history.detail %>
 </p>
 
-<%= link_to 'Edit', edit_history_path(@history) %> |
-<%= link_to 'Back', histories_path %>
+<%= link_to '編集', edit_history_path(@history) %> |
+<%= link_to '戻る', histories_path %>

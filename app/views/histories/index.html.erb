@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Histories</h1>
+<h1>営業リスト</h1>
 
 <table>
   <thead>
@@ -22,9 +22,9 @@
         <td><%= history.sales_category %></td>
         <td><%= history.sales_achievement %></td>
         <td><%= history.detail %></td>
-        <td><%= link_to 'Show', history %></td>
-        <td><%= link_to 'Edit', edit_history_path(history) %></td>
-        <td><%= link_to 'Destroy', history, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '確認', history %></td>
+        <td><%= link_to '編集', edit_history_path(history) %></td>
+        <td><%= link_to '削除', history, method: :delete, data: { confirm: '本当に消してもよろしいですか?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -36,4 +36,4 @@
   <li><%= link_to "顧客情報", customers_path %></li>
   <li><%= link_to "社員情報", staff_infos_path %></li>
 </ul>
-<%= link_to 'New History', new_history_path %>
+<%= link_to '新規登録', new_history_path %>
