@@ -28,21 +28,21 @@ Customer.create(:id => 1,
                 :zip => '111-1111',
                 :address => '東京都港区ミナトミライ4-26-1',
                 :tel => '092-111-111',
-                :responsible_name => 'memo')
+                :responsible_name => '中田')
 
 Customer.create(:id => 2,
                 :company_name => '卵販売株式会社',
                 :zip => '131-1441',
                 :address => '福岡県福岡市東区和白東5-20-30',
                 :tel => '092-112-112',
-                :responsible_name => 'memo')
+                :responsible_name => '棚田さん')
 
 Customer.create(:id => 3,
                 :company_name => '桃の木株式会社',
                 :zip => '880-1221',
                 :address => '大阪府大阪市南区柳町5-11-11',
                 :tel => '092-144-511',
-                :responsible_name => 'memo')
+                :responsible_name => '三木谷')
 
 History.delete_all
 
