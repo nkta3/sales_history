@@ -69,6 +69,6 @@ class HistoriesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def history_params
-      params.require(:history).permit(:activity_time, :customer_id, :sales_category, :sales_achievement, :detail)
+      params.require(:history).permit(:activity_time, :customer_id, :sales_category, :sales_achievement, :detail ,:staff_info_id)
     end
 end

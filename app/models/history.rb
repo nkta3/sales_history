@@ -14,6 +14,6 @@
 
 class History < ActiveRecord::Base
   belongs_to :customer
-
+  belongs_to :staff_info
   validates :activity_time, :customer_id, :sales_category, :sales_achievement,presence: {present: true, message: "必須入力です。記入をお願いします。"}
 end

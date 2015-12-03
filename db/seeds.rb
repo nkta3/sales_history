@@ -51,18 +51,21 @@ History.create(:id => 1,
                :customer_id => 1,
                :sales_category => '商品案内',
                :sales_achievement => '達成',
-               :detail => 'メモ')
+               :detail => 'メモ',
+               :staff_info_id => 1)
 
 History.create(:id => 2,
                :activity_time => DateTime.new(1993,2,24,12,30,45),
                :customer_id => 2,
                :sales_category => '契約',
                :sales_achievement => '継続',
-               :detail => 'メモ')
+               :detail => 'メモ',
+               :staff_info_id => 2)
 
 History.create(:id => 3,
                :activity_time => DateTime.new(1993,2,24,12,30,45),
                :customer_id => 3,
                :sales_category => 'クレーム処理',
                :sales_achievement => '失敗',
-               :detail => 'メモ')
+               :detail => 'メモ',
+               :staff_info_id => 3)
