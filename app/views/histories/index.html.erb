@@ -39,3 +39,7 @@
   <li><%= link_to "社員情報", staff_infos_path %></li>
 </ul>
 <%= link_to '新規登録', new_history_path %>
+
+<br>
+<%= History.chart_h %>
+<%= column_chart History.chart_h %>
