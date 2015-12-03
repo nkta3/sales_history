@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>社員ID</th>
       <th>氏名</th>
       <th colspan="3"></th>
     </tr>
@@ -13,6 +14,7 @@
   <tbody>
     <% @staff_infos.each do |staff_info| %>
       <tr>
+        <td><%= staff_info.id %></td>
         <td><%= staff_info.name %></td>
         <td><%= link_to '確認', staff_info %></td>
         <td><%= link_to '編集', edit_staff_info_path(staff_info) %></td>

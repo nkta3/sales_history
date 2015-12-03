@@ -28,8 +28,9 @@
     <%= f.select(:sales_achievement, options_for_select(%w{達成 継続 失敗}, '継続')) %>
   </div>
   <div class="field">
-    <%= f.label :"営業担当者名" %><br>
-    <%= f.collection_select(:staff_info_id, StaffInfo.all, :id, :name) %>
+    <%= f.label :"営業担当者ID" %><br>
+    <%= f.text_field :staff_info_id %>
+    <%#= @history.staff_info.name %>
   <div class="field">
     <%= f.label :"詳細" %><br>
     <%= f.text_area :detail %>
