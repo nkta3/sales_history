@@ -57,3 +57,6 @@ gem 'rails-erd'
 gem 'annotate'
 
 gem 'material-design-rails'
+
+# Gemfile
+gem "chartkick"

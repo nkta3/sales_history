@@ -5,6 +5,9 @@ class HistoriesController < ApplicationController
   # GET /histories.json
   def index
     @histories = History.all
+    # charts_controller
+    # ハッシュデータ
+    @chart_data = {'test1' => 100, 'test2' => 200, 'test3' => 300}
   end
 
   # GET /histories/1
@@ -71,4 +74,5 @@ class HistoriesController < ApplicationController
     def history_params
       params.require(:history).permit(:activity_time, :customer_id, :sales_category, :sales_achievement, :detail ,:staff_info_id)
     end
+
 end

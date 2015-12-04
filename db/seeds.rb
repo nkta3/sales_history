@@ -21,6 +21,7 @@ StaffInfo.create(:id => 3,
                  :name => '中田 正弘')
 
 
+
 Customer.delete_all
 
 Customer.create(:id => 1,
@@ -69,3 +70,14 @@ History.create(:id => 3,
                :sales_achievement => '失敗',
                :detail => 'メモ',
                :staff_info_id => 3)
+
+History.transaction do
+  1000.times do
+    History.create(activity_time: Time.now,
+                   customer_id:   [1,2,3].sample,
+                   sales_category: %w{商品案内 契約 フォロー クレーム処理}.sample,
+                   sales_achievement: %w{達成 継続 失敗}.sample,
+                   detail: "test",
+                   staff_info_id: [1,2,3].sample)
+  end
+end

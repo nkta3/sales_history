@@ -44,6 +44,7 @@ GEM
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
     byebug (8.2.1)
+    chartkick (1.4.1)
     choice (0.2.0)
     coffee-rails (4.1.0)
       coffee-script (>= 2.2.0)
@@ -165,6 +166,7 @@ PLATFORMS
 DEPENDENCIES
   annotate
   byebug
+  chartkick
   coffee-rails (~> 4.1.0)
   jbuilder (~> 2.0)
   jquery-rails
