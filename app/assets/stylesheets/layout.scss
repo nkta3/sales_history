@@ -10,13 +10,18 @@ table th {
   padding: 10px;
   font-weight: bold;
   vertical-align: top;
-  border-bottom: 3px solid #900;
+  border-bottom: 3px solid #263238;
   color: #fff;
-  background: #000;
+  background: #607d8b;
 }
 table td {
   padding: 10px;
   vertical-align: top;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #263238;
   background: #eee;
+}
+
+.mdl-layout__header-row span a{
+  color: #FFF;
+  text-decoration: none;
 }
