@@ -1,3 +1,5 @@
+
+
 table {
   width: 90%;
   margin: 0 auto;
@@ -24,4 +26,20 @@ table td {
 .mdl-layout__header-row span a{
   color: #FFF;
   text-decoration: none;
+}
+
+
+* {
+  font-family: Quicksand, 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.mdl-card__actions.mdl-card--border a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+}
+
+#newsave {
+  margin-left: 10px;
+  text-align: center;
 }
