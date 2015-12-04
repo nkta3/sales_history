@@ -37,9 +37,14 @@ table td {
   color: #fff;
   text-decoration: none;
   text-align: center;
+  font-weight: bold;
 }
 
 #newsave {
   margin-left: 10px;
   text-align: center;
+}
+
+.demo-card-event.mdl-card {
+    background: #039de5;
 }
