@@ -3,13 +3,14 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .material-icons.md-48 {
-  font-size: 150px;
+  font-size: 135px;
 }
 
 .demo-card-event.mdl-card {
-  width: 256px;
+  width: auto;
   height: 256px;
-  background: #3E4EB8;
+  margin: 0 auto 0 auto;
+  background: #40c4ff;
 }
 .demo-card-event > .mdl-card__actions {
   border-color: rgba(255, 255, 255, 0.2);
@@ -34,4 +35,8 @@
 
 #icon {
   margin: 0 auto;
+}
+
+.mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect a {
+  color: #fff;
 }
