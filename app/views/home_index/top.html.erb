@@ -1,21 +1,64 @@
 <div id="top">
-<h1 id="title">株式会社中高田　営業データベース</h1>
 
-<div id="menu">
-  <p>
-    <span class="btn" ><%= link_to "営業リスト", histories_path %></span>
-  </p>
+<table id="icon">
+  <tr id="torima">
+    <td id="toriaezu">
+      <div class="demo-card-event mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <i class="material-icons md-48">business</i>
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+            <span id="moji"><%= link_to "営業リスト", histories_path %></span>
+          </a>
+          <div class="mdl-layout-spacer"></div>
+        </div>
+      </div>
+    </td>
 
-  <p>
-    <span class="btn" ><%= link_to "新規営業履歴", 'histories/new' %></span>
-  </p>
+    <td id="toriaezu">
+      <div class="demo-card-event mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <i class="material-icons md-48">account_box</i>
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+            <span><%= link_to "顧客リスト", customers_path %></span>
+          </a>
+          <div class="mdl-layout-spacer"></div>
+        </div>       
+      </div>
+    </td>
+  </tr>
 
-  <p>
-    <span class="btn" ><%= link_to "顧客リスト", customers_path %></span>
-  </p>
+  <tr id="torima">
+    <td id="toriaezu">
+      <div class="demo-card-event mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <i class="material-icons md-48">contacts</i>
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+            <span><%= link_to "新規営業履歴", 'histories/new' %></span>
+          </a>
+          <div class="mdl-layout-spacer"></div>
+        </div>       
+      </div>
+    </td>
 
-  <p>
-    <span class="btn" ><%= link_to "新規顧客", 'customers/new' %></span>
-  </p>
-</div>
-</div>
+    <td id="toriaezu">
+      <div class="demo-card-event mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title mdl-card--expand">
+          <i class="material-icons md-48">face</i>
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+            <span><%= link_to "新規顧客", 'customers/new' %></span>
+          </a>
+          <div class="mdl-layout-spacer"></div>
+        </div>       
+      </div>
+    </td>
+  </tr>
+  </table>
+  </div>
