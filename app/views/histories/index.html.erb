@@ -2,6 +2,13 @@
 
 <p>営業リスト</p>
 
+
+<!-- 追加箇所開始 -->
+<%= page_entries_info @histories %>
+<!-- 追加箇所終了 -->
+
+
+
 <table>
   <thead>
     <tr>
@@ -32,14 +39,20 @@
   </tbody>
 </table>
 
+
 <br>
+
+<%= link_to '新規登録', new_history_path %>
+
+<!-- 追加箇所開始 -->
+<%= paginate @histories %>
+<!-- 追加箇所終了 -->
 
 <ul>
   <li><%= link_to "顧客情報", customers_path %></li>
   <li><%= link_to "社員情報", staff_infos_path %></li>
 </ul>
-<%= link_to '新規登録', new_history_path %>
 
 <br>
-<%= History.chart_h %>
+
 <%= column_chart History.chart_h %>

@@ -5,9 +5,9 @@ class HistoriesController < ApplicationController
   # GET /histories.json
   def index
     @histories = History.all
-    # charts_controller
-    # ハッシュデータ
-    @chart_data = {'test1' => 100, 'test2' => 200, 'test3' => 300}
+    #page-nationのため
+    @histories = History.page(params[:page])
+
   end
 
   # GET /histories/1
