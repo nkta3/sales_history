@@ -19,6 +19,14 @@ StaffInfo.create(:id => 2,
                  :name => '田中 健二')
 StaffInfo.create(:id => 3,
                  :name => '中田 正弘')
+StaffInfo.create(:id => 4,
+                 :name => '高口 政義')
+StaffInfo.create(:id => 5,
+                 :name => '牧田 西武')
+StaffInfo.create(:id => 6,
+                 :name => '高橋 由伸')
+StaffInfo.create(:id => 7,
+                 :name => '吉川 光男')
 
 
 
@@ -36,14 +44,28 @@ Customer.create(:id => 2,
                 :zip => '131-1441',
                 :address => '福岡県福岡市東区和白東5-20-30',
                 :tel => '092-112-112',
-                :responsible_name => '棚田さん')
+                :responsible_name => '棚田')
 
 Customer.create(:id => 3,
                 :company_name => '桃の木株式会社',
                 :zip => '880-1221',
                 :address => '大阪府大阪市南区柳町5-11-11',
                 :tel => '092-144-511',
-                :responsible_name => '三木谷')
+                :responsible_name => '三木')
+
+Customer.create(:id => 4,
+                :company_name => '年甲株式会社',
+                :zip => '880-1221',
+                :address => '京都府京都市南区柳町5-11-11',
+                :tel => '092-144-511',
+                :responsible_name => '三谷')
+
+Customer.create(:id => 5,
+                :company_name => '亀羅株式会社',
+                :zip => '880-1221',
+                :address => '佐賀県佐賀市柳町5-11-11',
+                :tel => '092-144-511',
+                :responsible_name => '谷')
 
 History.delete_all
 
@@ -72,12 +94,12 @@ History.create(:id => 3,
                :staff_info_id => 3)
 
 History.transaction do
-  1000.times do
+  1000.times do |i|
     History.create(activity_time: Time.now,
-                   customer_id:   [1,2,3].sample,
+                   customer_id:   [1,2,3,4,5].sample,
                    sales_category: %w{商品案内 契約 フォロー クレーム処理}.sample,
                    sales_achievement: %w{達成 継続 失敗}.sample,
                    detail: "test",
-                   staff_info_id: [1,2,3].sample)
+                   staff_info_id: [1,2,3,1,2,4,2,5,6,4,6,7].sample)
   end
 end
