@@ -46,11 +46,6 @@
 <%= paginate @histories %>
 <!-- 追加箇所終了 -->
 
-<ul>
-  <li><%= link_to "顧客情報", customers_path %></li>
-  <li><%= link_to "社員情報", staff_infos_path %></li>
-</ul>
-
 <br>
 
 <%= column_chart History.chart_h %>
