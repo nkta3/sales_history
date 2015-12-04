@@ -60,3 +60,6 @@ gem 'material-design-rails'
 
 # Gemfile
 gem "chartkick"
+
+#page-nation
+gem 'kaminari'
