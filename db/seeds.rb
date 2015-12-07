@@ -10,6 +10,7 @@
 
 
 
+History.delete_all
 
 StaffInfo.delete_all
 
@@ -67,7 +68,6 @@ Customer.create(:id => 5,
                 :tel => '092-144-511',
                 :responsible_name => '谷')
 
-History.delete_all
 
 # History.create(:id => 1,
 #                :activity_time => DateTime.new(1993,2,24,12,30,45),
